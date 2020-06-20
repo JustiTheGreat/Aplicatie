@@ -22,11 +22,9 @@ public class Principala{
         this.cart=cart;
         if(az_selected&&az_state==1) {
             az.setSelected(true);
-            //sort();
         }
         else if(az_selected&&az_state==2) {
             this.az_state = 1;
-            //sort();
         }
         try {
             all_products.clear();
