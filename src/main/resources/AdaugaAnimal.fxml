@@ -79,7 +79,7 @@
                               <Insets top="60.0" />
                            </GridPane.margin>
                         </TextField>
-                        <Button mnemonicParsing="false" prefWidth="70.0" text="Adaugare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                        <Button mnemonicParsing="false" onAction="#addLV" prefWidth="70.0" text="Adaugare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                            <GridPane.margin>
                               <Insets bottom="40.0" />
                            </GridPane.margin>
@@ -100,7 +100,7 @@
                            </GridPane.margin>
                         </Text>
                         <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="1" />
-                        <Button mnemonicParsing="false" prefWidth="70.0" text="Anulare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                        <Button mnemonicParsing="false" onAction="#close" prefWidth="70.0" text="Anulare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                            <GridPane.margin>
                               <Insets bottom="10.0" />
                            </GridPane.margin>
