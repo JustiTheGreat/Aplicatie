@@ -80,6 +80,21 @@ public class Magazine {
             e.printStackTrace();
         }
     }
+    public void cos(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader=new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Cos.fxml"));
+            Parent parent=loader.load();
+            Scene scene = new Scene(parent);
+            Cos controller=loader.getController();
+            controller.set(client_username,client_adress,cart);
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void acceseaza(ActionEvent actionEvent) {
         String selectedItem = lv.getSelectionModel().getSelectedItem();

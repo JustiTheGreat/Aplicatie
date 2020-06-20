@@ -124,7 +124,7 @@
                   <Insets left="60.0" top="350.0" />
                </GridPane.margin>
             </RadioButton>
-            <Button mnemonicParsing="false" prefHeight="125.0" prefWidth="250.0" text="Cos" GridPane.columnIndex="1" GridPane.valignment="TOP">
+            <Button mnemonicParsing="false" onAction="#cos" prefHeight="125.0" prefWidth="250.0" text="Cos" GridPane.columnIndex="1" GridPane.valignment="TOP">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
