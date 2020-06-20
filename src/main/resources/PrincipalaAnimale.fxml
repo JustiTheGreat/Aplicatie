@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PrincipalaAnimale">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="366.0" minWidth="10.0" prefWidth="366.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" prefWidth="1000.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="770.0" minHeight="10.0" prefHeight="770.0" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="addToCart" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addToCart" prefHeight="50.0" prefWidth="250.0" text="Adauga in cos" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="az" minWidth="25.0" mnemonicParsing="false" onAction="#filt_and_sort" text="Alfabetic (A-Z)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="30.0" top="60.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </RadioButton>
+            <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
+            <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+            <RadioButton fx:id="masc" mnemonicParsing="false" onAction="#filt_and_sort" text="Masculin" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="130.0" top="280.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </RadioButton>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorteaza:" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Blend />
+                     </topInput>
+                  </Blend>
+               </effect>
+               <GridPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" top="140.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Blend />
+                     </topInput>
+                  </Blend>
+               </effect>
+            </Text>
+            <ListView fx:id="lv" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></ListView>
+            <RadioButton fx:id="fem" mnemonicParsing="false" onAction="#filt_and_sort" text="Feminin" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="130.0" top="240.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <Button mnemonicParsing="false" onAction="#principala" prefHeight="125.0" prefWidth="250.0" text="Produse" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="125.0" prefWidth="250.0" text="Magazine" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="250.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="125.0" prefWidth="250.0" text="Comenzi" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="500.0" />
+               </GridPane.margin>
+            </Button>
+            <RadioButton fx:id="pisici" mnemonicParsing="false" onAction="#filt_and_sort" text="Pisici" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="130.0" top="330.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="caini" mnemonicParsing="false" onAction="#filt_and_sort" text="Caini" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="130.0" top="370.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="papagali" mnemonicParsing="false" onAction="#filt_and_sort" text="Papagali" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="130.0" top="410.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="pestisori" mnemonicParsing="false" onAction="#filt_and_sort" text="Pestisori" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="130.0" top="450.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="hamsteri" mnemonicParsing="false" onAction="#filt_and_sort" text="Hamsteri" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="130.0" top="490.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="dn" mnemonicParsing="false" onAction="#filt_and_sort" text="Data nasterii (crescator)" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" top="100.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <Button mnemonicParsing="false" prefHeight="125.0" prefWidth="250.0" text="Cos" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="750.0" />
+               </GridPane.margin>
+            </Button>
+            <RadioButton fx:id="animale" mnemonicParsing="false" onAction="#principala" text="Animale" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" top="190.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Sex:" GridPane.rowIndex="1">
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Blend />
+                     </topInput>
+                  </Blend>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="70.0" top="240.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip:" GridPane.rowIndex="1">
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Blend />
+                     </topInput>
+                  </Blend>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="70.0" top="330.0" />
+               </GridPane.margin>
+            </Text>
+            <RadioButton mnemonicParsing="false" onAction="#principala_produse" text="Produse" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" top="540.0" />
+               </GridPane.margin>
+            </RadioButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
