@@ -40,7 +40,7 @@
                         <Insets left="250.0" />
                     </GridPane.margin>
                 </Button>
-                <Button mnemonicParsing="false" prefHeight="125.0" prefWidth="250.0" text="Comenzi" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                <Button mnemonicParsing="false" onAction="#comenzi" prefHeight="125.0" prefWidth="250.0" text="Comenzi" GridPane.columnIndex="1" GridPane.valignment="TOP">
                     <font>
                         <Font name="System Bold" size="36.0" />
                     </font>

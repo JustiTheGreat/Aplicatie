@@ -7,47 +7,66 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
-import java.beans.XMLDecoder;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Magazine {
-    private ArrayList<Utilizatori> List=new ArrayList<Utilizatori>();
-
+public class Comenzi {
     private String client_username;
     private String client_adress;
     private ArrayList<AllProducts> cart;
+    private ArrayList<Order> comenzi_user=new ArrayList<Order>();
     @FXML
     private ListView<String> lv = new ListView<String>();
-
     public void set(String client_username,String client_adress,ArrayList<AllProducts> cart) {
         this.client_username = client_username;
         this.client_adress=client_adress;
         this.cart = cart;
         loadLV();
     }
-
-    public void loadLV(){
-
-        //Decodificare xml file
-        try{
-            FileInputStream fis = new FileInputStream("./DateUseriXML.xml");
-            XMLDecoder decoder = new XMLDecoder(fis);
-            ArrayList list = new ArrayList();
-            list = (ArrayList) decoder.readObject();
-            List =list;
-        } catch (FileNotFoundException ex) {
-            ex.printStackTrace();
+    public void loadLV()
+    {
+        try {
+            lv.getItems().clear();
+            Scanner sc = new Scanner(new File("src/main/comenzi.txt"));
+            boolean ok = false;
+            int index = -1;
+            while (sc.hasNextLine())
+            {
+                String[] details = sc.nextLine().split(" ");
+                if (details[1].equals("NUME:" + client_username)) {
+                    index++;
+                    String[] t = details[0].split(":");
+                    String[] u = details[1].split(":");
+                    String[] a = details[2].split(":");
+                    String[] c = details[3].split(":");
+                    String[] s = details[4].split(":");
+                    String[] m = details[5].split(":");
+                    String[] l = details[6].split(":");
+                    comenzi_user.add(new Order(Long.parseLong(t[1]),u[1], a[1], Float.parseFloat(c[1]), s[1], m[1], new ArrayList<AllProducts>(),l[1]));
+                    ok = true;
+                }
+                else if (ok && (details[0].equals("ANIMAL") || details[0].equals("PRODUCT")))
+                    if (details[0].equals("ANIMAL"))
+                        comenzi_user.get(index).getProduse().add(new Animal(details[1], details[2], details[3], Integer.parseInt(details[4]), details[5], details[6]));
+                    else
+                        comenzi_user.get(index).getProduse().add(new Product(details[1], Float.parseFloat(details[2]), details[3], details[4], Integer.parseInt(details[5]), details[6]));
+                else ok = false;
+            }
+            if(comenzi_user.isEmpty()) lv.getItems().add("Nu ati trimis nici o comanda!");
+            else for (Order o : comenzi_user) {
+                String produse = "";
+                for (AllProducts p : o.getProduse())
+                    if (p.getObject().equals("ANIMAL"))
+                        produse = produse + " " + ((Animal) p).getNumeRasa();
+                    else produse = produse + " " + ((Product) p).getNume();
+                lv.getItems().add("TIME: "+o.getTime()+"   NUME: " + o.getNume() + "   ADRESA: " + o.getAdresa() + "   COST: " + o.getCost() + "   STARE: " + o.getStare() + "   MAGAZIN: " + o.getMagazin() + "   TIMP_LIVRARE: " + o.getTimpLivrare() + "   OBIECTE: " + produse);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
-
-
-        for (int i=0; i<List.size();i++)
-            if(List.get(i).getCategorie().equals("Petshop"))
-                lv.getItems().add("PETSHOP:     "+((Petshop)List.get(i)).getNumepetshop());
-            else if(List.get(i).getCategorie().equals("Centru"))
-                lv.getItems().add("CENTRU:      "+((Centru)List.get(i)).getNumecentru());
     }
 
     public void principala(ActionEvent actionEvent) {
@@ -110,55 +129,4 @@ public class Magazine {
             e.printStackTrace();
         }
     }
-
-    public void acceseaza(ActionEvent actionEvent) {
-        String selectedItem = lv.getSelectionModel().getSelectedItem();
-        if (selectedItem == null) message("Error!","Nu ati selectat nici un magazin!");
-        else {
-            String[] details = selectedItem.split(" ");
-            if(details[0].equals("PETSHOP:"))
-            try {
-                FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("/ProdusePetshop.fxml"));
-                Parent parent = loader.load();
-                Scene scene = new Scene(parent);
-                ProdusePetshop controller = loader.getController();
-                controller.set(client_username, client_adress, cart, details[5]);
-                Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-                stage.setScene(scene);
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            else if(details[0].equals("CENTRU:"))
-                try {
-                    FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(getClass().getResource("/AnimaleCentru.fxml"));
-                    Parent parent = loader.load();
-                    Scene scene = new Scene(parent);
-                    AnimaleCentru controller = loader.getController();
-                    controller.set(client_username, client_adress, cart, details[6]);
-                    Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-                    stage.setScene(scene);
-                    stage.show();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-        }
-    }
-
-        public void message(String title,String message) {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Message.fxml"));
-                Parent fxml = loader.load();
-                Stage stage = new Stage();
-                Message controller = loader.getController();
-                controller.set(message, stage);
-                stage.setTitle(title);
-                stage.setScene(new Scene(fxml));
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
 }
