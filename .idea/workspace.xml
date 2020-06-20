@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-63_Buton_editare_date_animal">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EditeazaAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditeazaAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EditeazaAnimal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EditeazaAnimal.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-63_Schimbarea_datelor" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592691179419</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="FIS1-63_Schimbarea_datelor">
+      <created>1592691282773</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1592691282773</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +238,8 @@
     <MESSAGE value="FIS1-58_Buton_adaugare_animal" />
     <MESSAGE value="FIS1-59_Se_intorduc_si_se_salveaza_datele_noului_animal" />
     <MESSAGE value="FIS1-63_Buton_editare_date_animal" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-63_Buton_editare_date_animal" />
+    <MESSAGE value="FIS1-63_Schimbarea_datelor" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-63_Schimbarea_datelor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
