@@ -37,13 +37,13 @@
                               <Insets left="10.0" top="40.0" />
                            </GridPane.margin>
                         </Text>
-                        <Button mnemonicParsing="false" prefWidth="70.0" text="Editare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                        <Button mnemonicParsing="false" onAction="#editLV" prefWidth="70.0" text="Editare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                            <GridPane.margin>
                               <Insets bottom="40.0" />
                            </GridPane.margin>
                         </Button>
                         <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="1" />
-                        <Button mnemonicParsing="false" prefWidth="70.0" text="Anulare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                        <Button mnemonicParsing="false" onAction="#close" prefWidth="70.0" text="Anulare" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                            <GridPane.margin>
                               <Insets bottom="10.0" />
                            </GridPane.margin>
