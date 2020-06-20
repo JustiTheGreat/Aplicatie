@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-84_Sortare_si_filtrare_animale">
+    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-63_Buton_editare_date_animal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ListaAnimaleCentru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaAnimaleCentru.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ListaAnimaleCentru.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ListaAnimaleCentru.fxml" afterDir="false" />
@@ -42,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="FIS1-25_Sterge_produs" />
+        <entry key="$PROJECT_DIR$" value="FIS1-55_Adauga_animal" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -184,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592689533469</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="FIS1-58_Buton_adaugare_animal">
+      <created>1592690497947</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592690497947</updated>
+    </task>
+    <task id="LOCAL-00014" summary="FIS1-59_Se_intorduc_si_se_salveaza_datele_noului_animal">
+      <created>1592690611620</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1592690611620</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +225,10 @@
     <MESSAGE value="FIS1-27_Stergerea_produsului" />
     <MESSAGE value="FIS1-83_Afisare_animale" />
     <MESSAGE value="FIS1-84_Sortare_si_filtrare_animale" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-84_Sortare_si_filtrare_animale" />
+    <MESSAGE value="FIS1-58_Buton_adaugare_animal" />
+    <MESSAGE value="FIS1-59_Se_intorduc_si_se_salveaza_datele_noului_animal" />
+    <MESSAGE value="FIS1-63_Buton_editare_date_animal" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-63_Buton_editare_date_animal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
@@ -264,6 +281,10 @@
     </state>
     <state width="1478" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
     <state width="1877" height="232" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592686703365" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592690664479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592690664479" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592670799054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

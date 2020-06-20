@@ -76,28 +76,26 @@ public class ListaAnimaleCentru {
         }
     }
 
-    public void deleteAnimal() {
+    public void editAnimal() {
         String selectedItem = lv.getSelectionModel().getSelectedItem();
         if (selectedItem == null) message("Error!","Nu ati selectat nici un animal!");
         else {
             String[] details = selectedItem.split(" ");
-            int index=0;
+            int index = 0;
             for (AllProducts p : all_products)
-                if (p.getObject().equals("ANIMAL")&&((Animal)p).getNumeRasa().equals(details[0])) index=all_products.indexOf(p);
-            all_products.remove(index);
-            write();
-            filt_and_sort();
-        }
-    }
-
-    public void write() {
-        try {
-            FileWriter myWriter = new FileWriter("src/main/produse.txt", false);
-            for (AllProducts p : all_products)
-                myWriter.write(p.getObject() + " " + p.toString() + "\n");
-            myWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+                if (p.getObject().equals("ANIMAL")&&((Animal)p).getNumeRasa().equals(details[1])) index = all_products.indexOf(p);
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/EditeazaAnimal.fxml"));
+                Parent fxml = loader.load();
+                Stage stage = new Stage();
+                EditeazaAnimal controller = loader.getController();
+                controller.set(stage,shop_username,all_products,lv,fem,masc,pisici,caini,papagali,pestisori,hamsteri,az,dn,az_state,dn_state,index);
+                stage.setTitle("Editare produs");
+                stage.setScene(new Scene(fxml));
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
