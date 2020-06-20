@@ -1,22 +1,20 @@
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ListView;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class ListaProdusePetshop {
+public class EditeazaProdus{
     private String shop_username;
-    private String shop_adress;
-    private ArrayList<AllProducts> all_products;
+    private ArrayList<AllProducts> all_products = new ArrayList<AllProducts>();
     @FXML
     private ListView<String> lv = new ListView<String>();
     @FXML
@@ -29,65 +27,118 @@ public class ListaProdusePetshop {
     private RadioButton az;
     @FXML
     private RadioButton price;
-    private int az_state=0, price_state =0;
-    public void set(String shop_username,String shop_adress,ArrayList<AllProducts> all_products)
-    {
+    private int az_state,price_state;
+    private Stage stage;
+    @FXML
+    private TextField nume;
+    @FXML
+    private TextField pret;
+    @FXML
+    private ChoiceBox categorie;
+    @FXML
+    private TextField cantitate;
+    private int index;
+
+    public void set(Stage stage, String shop_username,ArrayList<AllProducts> all_products, ListView<String> lv, RadioButton hrana, RadioButton ingrijire, RadioButton jucarii, RadioButton az, RadioButton price,int az_state,int price_state,int index) {
+        this.stage = stage;
         this.shop_username=shop_username;
-        this.shop_adress=shop_adress;
         this.all_products=all_products;
-        all_products.clear();
-        try {
-            Scanner sc = new Scanner(new File("src/main/produse.txt"));
-            while (sc.hasNextLine()) {
-                String[] details = sc.nextLine().split(" ");
-                if(details[0].equals("ANIMAL"))
-                    all_products.add(new Animal(details[1], details[2], details[3], Integer.parseInt(details[4]), details[5], details[6]));
-                else
-                    all_products.add(new Product(details[1], Float.parseFloat(details[2]), details[3], details[4], Integer.parseInt(details[5]), details[6]));
+        this.lv=lv;
+        this.hrana=hrana;
+        this.ingrijire=ingrijire;
+        this.jucarii=jucarii;
+        this.az=az;
+        this.price =price;
+        this.index = index;
+        categorie.getItems().addAll("HRANA","INGRIJIRE","JUCARII");
+        setCaracteristici();
+        if (az.isSelected())
+        {
+            this.price.setSelected(false);
+            this.price_state=0;
+            if (az_state == 1) {
+                this.az.setSelected(true);
+                this.az_state = 0;
+            } else if (az_state == 2) {
+                this.az.setSelected(false);
+                this.az_state = 1;
             }
-            for (AllProducts p : all_products)
-                if (p.getObject().equals("PRODUCT")&&((Product)p).getMagazin().equals(shop_username))
-                        lv.getItems().add(p.toLV());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        }
+        else if (price.isSelected())
+        {
+            this.az.setSelected(false);
+            this.az_state=0;
+            if (price_state == 1) {
+                this.price.setSelected(true);
+                this.price_state = 0;
+            } else if (price_state == 2) {
+                this.price.setSelected(false);
+                this.price_state = 1;
+            }
+        }
+        else
+        {
+            this.az.setSelected(false);
+            this.az_state=0;
+            this.price.setSelected(false);
+            this.price_state=0;
         }
     }
 
-    public void addProduct() {
+    public void setCaracteristici()
+    {
+        nume.setText(((Product)all_products.get(index)).getNume());
+        pret.setText(String.valueOf(((Product)all_products.get(index)).getPret()));
+        categorie.setValue(((Product)all_products.get(index)).getCategorie());
+        cantitate.setText(String.valueOf(((Product)all_products.get(index)).getCantitate()));
+    }
+
+    public boolean isFloat(String s) {
+        try{
+            Float.parseFloat(s);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isInt(String s) {
+        try{
+            Integer.parseInt(s);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public void close()
+    {
+        stage.close();
+    }
+
+    public void editLV () {
+        int ok=1;
+        for(AllProducts p:all_products)
+            if(p.getObject().equals("PRODUCT") && ((Product)p).getMagazin().equals(shop_username) && ((Product)p).getNume().equals(nume.getText()) && all_products.indexOf(p)!=index)ok=0;
+        if(ok==1 && isFloat(pret.getText()) && isInt(cantitate.getText()) && Float.parseFloat(pret.getText())>=0 && Integer.parseInt(cantitate.getText())>=0 && !nume.getText().isEmpty() && !pret.getText().isEmpty() && !cantitate.getText().isEmpty()) {
+            ((Product)all_products.get(index)).set(nume.getText(),Float.parseFloat(pret.getText()),categorie.getValue().toString(),shop_username,Integer.parseInt(cantitate.getText()),Integer.parseInt(cantitate.getText())==0?"INDISPONIBIL":"DISPONIBIL");
+            write();
+            filt_and_sort();
+            stage.close();
+        }
+        else {
+            setCaracteristici();
+            message("Eroare!","Date introduse gresit!");
+        }
+    }
+    public void write() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/AdaugaProdus.fxml"));
-            Parent fxml = loader.load();
-            Stage stage = new Stage();
-            AdaugaProdus controller = loader.getController();
-            controller.set(stage,shop_username,all_products,lv,hrana,ingrijire,jucarii,az,price,az_state,price_state);
-            stage.setTitle("Adaugare produs");
-            stage.setScene(new Scene(fxml));
-            stage.show();
+            FileWriter myWriter = new FileWriter("src/main/produse.txt", false);
+            for (AllProducts p : all_products)
+                myWriter.write(p.getObject() + " " + p.toString() + "\n");
+            myWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-    }
-
-    public void editProduct() {
-        String selectedItem = lv.getSelectionModel().getSelectedItem();
-        if (selectedItem == null) message("Error!","Nu ati selectat nici un produs!");
-        else {
-            String[] details = selectedItem.split(" ");
-            int index = 0;
-            for (AllProducts p : all_products)
-                if (p.getObject().equals("PRODUCT")&&((Product)p).getNume().equals(details[1])) index = all_products.indexOf(p);
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/EditeazaProdus.fxml"));
-                Parent fxml = loader.load();
-                Stage stage = new Stage();
-                EditeazaProdus controller = loader.getController();
-                controller.set(stage,shop_username,all_products,lv,hrana,ingrijire,jucarii,az,price,az_state,price_state,index);
-                stage.setTitle("Editare produs");
-                stage.setScene(new Scene(fxml));
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -176,9 +227,7 @@ public class ListaProdusePetshop {
         if(f[0]||f[1]||f[2]) {
             for (AllProducts p : all_products)
                 if (p.getObject().equals("PRODUCT") && ((Product) p).getMagazin().equals(shop_username))
-                    if (((Product) p).getCategorie().equalsIgnoreCase(c[0]) && f[0]
-                            || ((Product) p).getCategorie().equalsIgnoreCase(c[1]) && f[1]
-                            || ((Product) p).getCategorie().equalsIgnoreCase(c[2]) && f[2])
+                    if (((Product) p).getCategorie().equalsIgnoreCase(c[0]) && f[0] || ((Product) p).getCategorie().equalsIgnoreCase(c[1]) && f[1] || ((Product) p).getCategorie().equalsIgnoreCase(c[2]) && f[2])
                         filt.add(((Product)p));
         }
         else

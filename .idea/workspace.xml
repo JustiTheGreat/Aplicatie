@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-81_Sortare_si_filtrare_produse">
+    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-35_Buton_adaugare_produs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" afterDir="false" />
@@ -42,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="FIS1-34_Adauga_produs" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -68,8 +68,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\java" />
+      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\java" />
       <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main" />
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592686696944</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FIS1-35_Buton_adaugare_produs">
+      <created>1592687760817</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592687760817</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +171,8 @@
     <MESSAGE value="FIS1-40_Creaza_o_comanda" />
     <MESSAGE value="FIS1-80_Afisare_produse" />
     <MESSAGE value="FIS1-81_Sortare_si_filtrare_produse" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-81_Sortare_si_filtrare_produse" />
+    <MESSAGE value="FIS1-35_Buton_adaugare_produs" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-35_Buton_adaugare_produs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
