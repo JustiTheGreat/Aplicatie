@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Autentificare">
+   <children>
+      <Label layoutX="558.0" layoutY="321.0" text="Username" />
+      <Label layoutX="574.0" layoutY="388.0" text="Parola" />
+      <TextField fx:id="username" layoutX="666.0" layoutY="306.0" promptText="Username" />
+      <Button layoutX="514.0" layoutY="473.0" mnemonicParsing="false" onMouseClicked="#click" prefHeight="121.0" prefWidth="339.0" text="Autentificare" textFill="RED">
+         <font>
+            <Font size="35.0" />
+         </font></Button>
+      <PasswordField fx:id="parola" layoutX="666.0" layoutY="383.0" promptText="Parola" />
+   </children>
+</AnchorPane>
