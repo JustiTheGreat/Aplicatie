@@ -245,4 +245,20 @@ public class ListaAnimaleCentru {
                 lv.getItems().add(p.toLV());
         }
     }
+
+    public void viewOrders(javafx.event.ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader=new FXMLLoader();
+            loader.setLocation(getClass().getResource("/ListaComenzi.fxml"));
+            Parent parent=loader.load();
+            Scene scene = new Scene(parent);
+            ListaComenzi controller=loader.getController();
+            controller.set(shop_username,shop_adress,all_products,"centru");
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

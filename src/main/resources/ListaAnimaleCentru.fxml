@@ -43,7 +43,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" text="Vizualizare cereri" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#viewOrders" prefHeight="50.0" prefWidth="250.0" text="Vizualizare cereri" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -51,7 +51,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <RadioButton fx:id="az" minWidth="25.0" mnemonicParsing="false" text="Alfabetic (A-Z)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <RadioButton fx:id="az" minWidth="25.0" mnemonicParsing="false" onAction="#filt_and_sort" text="Alfabetic (A-Z)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets left="30.0" top="60.0" />
                </GridPane.margin>
@@ -59,7 +59,7 @@
                   <Font size="24.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="dn" mnemonicParsing="false" text="Data nasterii (crescator)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <RadioButton fx:id="dn" mnemonicParsing="false" onAction="#filt_and_sort" text="Data nasterii (crescator)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets left="30.0" top="100.0" />
                </GridPane.margin>
