@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-29_Butonul_de_vizualizare_a_comenziilor/cererilor_primite">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ListaComenzi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaComenzi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ListaComenzi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ListaComenzi.fxml" afterDir="false" />
+    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-32_Selectare_comanda/cerere_de_adoptie">
+      <change beforePath="$PROJECT_DIR$/src/main/java/EditeazaComanda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditeazaComanda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EditeazaComanda.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EditeazaComanda.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -68,8 +67,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\java" />
+      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\java" />
       <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main" />
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592693339159</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="FIS1-32_Selectare_comanda/cerere_de_adoptie">
+      <created>1592694099467</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1592694099467</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +257,8 @@
     <MESSAGE value="FIS1-63_Buton_editare_date_animal" />
     <MESSAGE value="FIS1-63_Schimbarea_datelor" />
     <MESSAGE value="FIS1-29_Butonul_de_vizualizare_a_comenziilor/cererilor_primite" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-29_Butonul_de_vizualizare_a_comenziilor/cererilor_primite" />
+    <MESSAGE value="FIS1-32_Selectare_comanda/cerere_de_adoptie" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-32_Selectare_comanda/cerere_de_adoptie" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
