@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-35_Buton_adaugare_produs">
+    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-15_Selectare_produs_de_editat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="FIS1-34_Adauga_produs" />
+        <entry key="$PROJECT_DIR$" value="FIS1-12_Editeaza_datele_unui_produs" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592687760817</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FIS1-15_Selectare_produs_de_editat">
+      <created>1592688453838</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592688453838</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +178,8 @@
     <MESSAGE value="FIS1-80_Afisare_produse" />
     <MESSAGE value="FIS1-81_Sortare_si_filtrare_produse" />
     <MESSAGE value="FIS1-35_Buton_adaugare_produs" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-35_Buton_adaugare_produs" />
+    <MESSAGE value="FIS1-15_Selectare_produs_de_editat" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-15_Selectare_produs_de_editat" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
