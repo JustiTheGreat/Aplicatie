@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -49,7 +53,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <RadioButton fx:id="az" minWidth="25.0" mnemonicParsing="false" text="Alfabetic (A-Z)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <RadioButton fx:id="az" minWidth="25.0" mnemonicParsing="false" onAction="#filt_and_sort" text="Alfabetic (A-Z)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets left="30.0" top="60.0" />
                </GridPane.margin>
@@ -57,7 +61,7 @@
                   <Font size="24.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="price" mnemonicParsing="false" text="Pret (crescator)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <RadioButton fx:id="price" mnemonicParsing="false" onAction="#filt_and_sort" text="Pret (crescator)" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets left="30.0" top="100.0" />
                </GridPane.margin>
@@ -67,7 +71,7 @@
             </RadioButton>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
             <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
-            <RadioButton fx:id="ingrijire" mnemonicParsing="false" text="Ingrijire" GridPane.rowIndex="1">
+            <RadioButton fx:id="ingrijire" mnemonicParsing="false" onAction="#filt_and_sort" text="Ingrijire" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="30.0" top="230.0" />
                </GridPane.margin>
@@ -75,7 +79,7 @@
                   <Font size="24.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="jucarii" mnemonicParsing="false" text="Jucarii" GridPane.rowIndex="1">
+            <RadioButton fx:id="jucarii" mnemonicParsing="false" onAction="#filt_and_sort" text="Jucarii" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="30.0" top="270.0" />
                </GridPane.margin>
@@ -128,7 +132,7 @@
                   <Blend />
                </effect>
             </Text>
-            <RadioButton fx:id="hrana" mnemonicParsing="false" text="Hrana" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+            <RadioButton fx:id="hrana" mnemonicParsing="false" onAction="#filt_and_sort" text="Hrana" GridPane.halignment="LEFT" GridPane.rowIndex="1">
                <font>
                   <Font size="24.0" />
                </font>

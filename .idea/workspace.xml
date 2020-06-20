@@ -26,10 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-79_Afisare_produse">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Autentificare.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Principala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Principala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +106,14 @@
       <option name="presentableId" value="Default" />
       <updated>1587930525949</updated>
     </task>
+    <task id="LOCAL-00001" summary="FIS1-79_Afisare_produse">
+      <created>1592684673302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592684673302</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
