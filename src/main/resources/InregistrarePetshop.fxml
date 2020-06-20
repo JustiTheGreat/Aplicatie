@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InregistrarePetshop">
+   <children>
+      <TextField fx:id="strada" layoutX="677.0" layoutY="343.0" promptText="Strada" />
+      <TextField fx:id="parola" layoutX="677.0" layoutY="588.0" promptText="Parola" />
+      <Label layoutX="554.0" layoutY="593.0" text="Parola" />
+      <Label layoutX="554.0" layoutY="472.0" text="Telefon" />
+      <TextField fx:id="username" layoutX="677.0" layoutY="526.0" promptText="Username" />
+      <TextField fx:id="numepetshop" layoutX="677.0" layoutY="169.0" promptText="Nume Petshop" />
+      <TextField fx:id="judet" layoutX="677.0" layoutY="235.0" promptText="Judet" />
+      <TextField fx:id="localitate" layoutX="677.0" layoutY="291.0" promptText="Localitate" />
+      <TextField fx:id="numar" layoutX="677.0" layoutY="400.0" promptText="Numar" />
+      <Label layoutX="554.0" layoutY="348.0" text="Strada" />
+      <Label layoutX="545.0" layoutY="296.0" text="Localitate" />
+      <Label layoutX="552.0" layoutY="400.0" prefHeight="31.0" prefWidth="46.0" text="Numar" />
+      <Label layoutX="557.0" layoutY="240.0" text="Judet" />
+      <Label layoutX="526.0" layoutY="174.0" text="Nume Petshop" />
+      <Label layoutX="544.0" layoutY="531.0" text="Username" />
+      <TextField fx:id="telefon" layoutX="677.0" layoutY="467.0" promptText="Telefon" />
+      <Button layoutX="526.0" layoutY="645.0" mnemonicParsing="false" onMouseClicked="#click" prefHeight="99.0" prefWidth="341.0" text="Inregistrare" textFill="RED">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

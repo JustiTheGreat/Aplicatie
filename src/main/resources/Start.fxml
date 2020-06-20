@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Start">
+   <children>
+      <Button fx:id="StartInregistrareButon" layoutX="558.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#deschideInregistrare" prefHeight="81.0" prefWidth="250.0" text="Inregistrare" textAlignment="CENTER" textFill="#2500ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Button layoutX="558.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#deschideAutentificare" prefHeight="81.0" prefWidth="250.0" text="Autentificare" textFill="#3a00ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
