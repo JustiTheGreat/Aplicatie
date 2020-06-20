@@ -22,12 +22,14 @@
     <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AnimaleCentru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AnimaleCentru.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Magazine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Principala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Principala.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PrincipalaAnimale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrincipalaAnimale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PrincipalaProduse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrincipalaProduse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProdusePetshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProdusePetshop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/AnimaleCentru.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AnimaleCentru.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Cos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Cos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Magazine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Magazine.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Principala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Principala.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/PrincipalaAnimale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrincipalaAnimale.fxml" afterDir="false" />
@@ -52,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="FIS1-39_Lista_cu_petshopuri/centre_de_adoptie" />
+        <entry key="$PROJECT_DIR$" value="FIS1-40_Creaza_o_comanda" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592673697749</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="FIS1-40_Creaza_o_comanda">
+      <created>1592674569647</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592674569647</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,7 +160,8 @@
     <MESSAGE value="FIS1-11_Autentificare" />
     <MESSAGE value="FIS1-38_Lista_cu_produse/animale" />
     <MESSAGE value="FIS1-39_Lista_cu_petshopuri/centre_de_adoptie" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-39_Lista_cu_petshopuri/centre_de_adoptie" />
+    <MESSAGE value="FIS1-40_Creaza_o_comanda" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-40_Creaza_o_comanda" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
@@ -172,10 +182,10 @@
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592671845221" />
     <state x="624" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592504031988" />
-    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592673696179">
+    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592674567646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592673696179" />
+    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592674567646" />
     <state x="147" y="65" key="DiffContextDialog" timestamp="1592667398430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -184,25 +194,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588516662082" />
-    <state width="1478" height="161" key="GridCell.Tab.0.bottom" timestamp="1592674500309">
+    <state width="1478" height="161" key="GridCell.Tab.0.bottom" timestamp="1592675206638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592674500309" />
+    <state width="1478" height="161" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
     <state width="1877" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592579525292" />
-    <state width="1478" height="161" key="GridCell.Tab.0.center" timestamp="1592674500309">
+    <state width="1478" height="161" key="GridCell.Tab.0.center" timestamp="1592675206638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592674500309" />
+    <state width="1478" height="161" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
     <state width="1877" height="232" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592579525292" />
-    <state width="1478" height="161" key="GridCell.Tab.0.left" timestamp="1592674500309">
+    <state width="1478" height="161" key="GridCell.Tab.0.left" timestamp="1592675206638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592674500309" />
+    <state width="1478" height="161" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
     <state width="1877" height="232" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592579525292" />
-    <state width="1478" height="161" key="GridCell.Tab.0.right" timestamp="1592674500309">
+    <state width="1478" height="161" key="GridCell.Tab.0.right" timestamp="1592675206638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592674500309" />
+    <state width="1478" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
     <state width="1877" height="232" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592579525292" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592670799054">
       <screen x="0" y="0" width="1536" height="824" />

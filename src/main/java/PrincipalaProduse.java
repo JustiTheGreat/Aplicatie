@@ -264,7 +264,21 @@ public class PrincipalaProduse {
             e.printStackTrace();
         }
     }
-
+    public void comenzi(javafx.event.ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader=new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Comenzi.fxml"));
+            Parent parent=loader.load();
+            Scene scene = new Scene(parent);
+            Comenzi controller=loader.getController();
+            controller.set(client_username,client_adress,cart);
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public void cos(javafx.event.ActionEvent actionEvent) {
         try {
             FXMLLoader loader=new FXMLLoader();
