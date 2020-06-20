@@ -21,7 +21,7 @@
             <RowConstraints maxHeight="770.0" minHeight="10.0" prefHeight="770.0" valignment="TOP" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" text="Adauga produs" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addProduct" prefHeight="50.0" prefWidth="250.0" text="Adauga produs" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="200.0" />
                </GridPane.margin>
