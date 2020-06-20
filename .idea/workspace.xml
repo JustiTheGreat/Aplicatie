@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-80_Afisare_produse">
+    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-81_Sortare_si_filtrare_produse">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaProdusePetshop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ListaProdusePetshop.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -66,8 +68,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\java" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\resources" />
+      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\java" />
       <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\java" />
       <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main" />
@@ -133,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592686511741</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="FIS1-81_Sortare_si_filtrare_produse">
+      <created>1592686696944</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592686696944</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,7 +163,8 @@
     <MESSAGE value="FIS1-39_Lista_cu_petshopuri/centre_de_adoptie" />
     <MESSAGE value="FIS1-40_Creaza_o_comanda" />
     <MESSAGE value="FIS1-80_Afisare_produse" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-80_Afisare_produse" />
+    <MESSAGE value="FIS1-81_Sortare_si_filtrare_produse" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-81_Sortare_si_filtrare_produse" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
@@ -187,26 +197,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588516662082" />
-    <state width="1877" height="232" key="GridCell.Tab.0.bottom" timestamp="1592686461476">
+    <state width="1877" height="232" key="GridCell.Tab.0.bottom" timestamp="1592686703366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="161" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592686461476" />
-    <state width="1877" height="232" key="GridCell.Tab.0.center" timestamp="1592686461476">
+    <state width="1877" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592686703366" />
+    <state width="1877" height="232" key="GridCell.Tab.0.center" timestamp="1592686703365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="161" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592686461476" />
-    <state width="1877" height="232" key="GridCell.Tab.0.left" timestamp="1592686461475">
+    <state width="1877" height="232" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592686703365" />
+    <state width="1877" height="232" key="GridCell.Tab.0.left" timestamp="1592686703365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="161" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592686461475" />
-    <state width="1877" height="232" key="GridCell.Tab.0.right" timestamp="1592686461476">
+    <state width="1877" height="232" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592686703365" />
+    <state width="1877" height="232" key="GridCell.Tab.0.right" timestamp="1592686703365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592686461476" />
+    <state width="1877" height="232" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592686703365" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592670799054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
