@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-83_Afisare_animale">
+    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-84_Sortare_si_filtrare_animale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ListaAnimaleCentru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaAnimaleCentru.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ListaAnimaleCentru.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ListaAnimaleCentru.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592689329374</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="FIS1-84_Sortare_si_filtrare_animale">
+      <created>1592689533469</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592689533469</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,7 +210,8 @@
     <MESSAGE value="FIS1-15_Selectare_produs_de_editat" />
     <MESSAGE value="FIS1-27_Stergerea_produsului" />
     <MESSAGE value="FIS1-83_Afisare_animale" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-83_Afisare_animale" />
+    <MESSAGE value="FIS1-84_Sortare_si_filtrare_animale" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIS1-84_Sortare_si_filtrare_animale" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">

@@ -60,6 +60,62 @@ public class ListaAnimaleCentru {
             e.printStackTrace();
         }
     }
+
+    public void addAnimal() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/AdaugaAnimal.fxml"));
+            Parent fxml = loader.load();
+            Stage stage = new Stage();
+            AdaugaAnimal controller = loader.getController();
+            controller.set(stage,shop_username,all_products,lv,fem,masc,pisici,caini,papagali,pestisori,hamsteri,az,dn,az_state,dn_state);
+            stage.setTitle("Adaugare produs");
+            stage.setScene(new Scene(fxml));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteAnimal() {
+        String selectedItem = lv.getSelectionModel().getSelectedItem();
+        if (selectedItem == null) message("Error!","Nu ati selectat nici un animal!");
+        else {
+            String[] details = selectedItem.split(" ");
+            int index=0;
+            for (AllProducts p : all_products)
+                if (p.getObject().equals("ANIMAL")&&((Animal)p).getNumeRasa().equals(details[0])) index=all_products.indexOf(p);
+            all_products.remove(index);
+            write();
+            filt_and_sort();
+        }
+    }
+
+    public void write() {
+        try {
+            FileWriter myWriter = new FileWriter("src/main/produse.txt", false);
+            for (AllProducts p : all_products)
+                myWriter.write(p.getObject() + " " + p.toString() + "\n");
+            myWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void message(String title,String message) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Message.fxml"));
+            Parent fxml = loader.load();
+            Stage stage = new Stage();
+            Message controller = loader.getController();
+            controller.set(message, stage);
+            stage.setTitle(title);
+            stage.setScene(new Scene(fxml));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void filt_and_sort() {
         String[] c ={"FEMININ","MASCULIN","PISICI","CAINI","PAPAGALI","PESTISORI","HAMSTERI"};
         boolean[] f={false,false,false,false,false,false,false},s ={false,false,false,false};
