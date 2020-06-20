@@ -257,5 +257,19 @@ public class PrincipalaAnimale{
             e.printStackTrace();
         }
     }
-
+    public void magazine(javafx.event.ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader=new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Magazine.fxml"));
+            Parent parent=loader.load();
+            Scene scene = new Scene(parent);
+            Magazine controller=loader.getController();
+            controller.set(client_username,client_adress,cart);
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

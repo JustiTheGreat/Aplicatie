@@ -1,26 +1,24 @@
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
-import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
+import java.io.IOException;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PrincipalaProduse {
+public class ProdusePetshop{
     private String client_username;
     private String client_adress;
+    private String shop_username;
     private ArrayList<AllProducts> all_products = new ArrayList<AllProducts>();
     private ArrayList<AllProducts> cart;
     @FXML
     private ListView<String> lv = new ListView<String>();
-    @FXML
-    private RadioButton produse;
     @FXML
     private RadioButton hrana;
     @FXML
@@ -31,33 +29,23 @@ public class PrincipalaProduse {
     private RadioButton az;
     @FXML
     private RadioButton pret;
-    private int az_state =0,pret_state =0;
+    private int az_state=0,pret_state=0;
 
-    public void set(boolean az_selected,int az_state,String client_username,String client_adress,ArrayList<AllProducts> cart)
+    public void set(String client_username,String client_adress,ArrayList<AllProducts> cart,String shop_username)
     {
+        this.shop_username=shop_username;
         this.client_username=client_username;
         this.client_adress=client_adress;
         this.cart=cart;
-        if(az_selected&&az_state==1) {
-            az.setSelected(true);
-            filt_and_sort();
-        }
-        else if(az_selected&&az_state==2) {
-            this.az_state = 1;
-            filt_and_sort();
-        }
-    }
 
-    public void initialize() {
         try {
-            produse.setSelected(true);
             all_products.clear();
             Scanner sc = new Scanner(new File("src/main/produse.txt"));
             while (sc.hasNextLine()) {
                 String line = sc.nextLine();
                 String[] details = line.split(" ");
-                if (details[0].equals("PRODUCT"))
-                    all_products.add(new Product(details[1], Float.parseFloat(details[2]), details[3], details[4], Integer.parseInt(details[5]), details[6]));
+                if(details[0].equals("PRODUCT")&&details[4].equals(shop_username))
+                all_products.add(new Product(details[1], Float.parseFloat(details[2]), details[3], details[4], Integer.parseInt(details[5]), details[6]));
             }
             for (AllProducts p : all_products)
                 lv.getItems().add(p.toLV());
@@ -112,13 +100,13 @@ public class PrincipalaProduse {
         }
     }
 
-    public void mesaj(String titlu, String mesaj) {
+    public void mesaj(String titlu,String mesaj) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Message.fxml"));
             Parent fxml = loader.load();
             Stage stage = new Stage();
             Message controller = loader.getController();
-            controller.set(mesaj, stage);
+            controller.set(mesaj,stage);
             stage.setTitle(titlu);
             stage.setScene(new Scene(fxml));
             stage.show();
@@ -216,22 +204,6 @@ public class PrincipalaProduse {
                 lv.getItems().add(p.toLV());
         }
     }
-    public void principala_animale(javafx.event.ActionEvent actionEvent) {
-        try {
-            FXMLLoader loader=new FXMLLoader();
-            loader.setLocation(getClass().getResource("/PrincipalaAnimale.fxml"));
-            Parent parent=loader.load();
-            Scene scene = new Scene(parent);
-            PrincipalaAnimale controller=loader.getController();
-            controller.set(az.isSelected(),az_state,client_username,client_adress,cart);
-            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public void principala(javafx.event.ActionEvent actionEvent) {
         try {
             FXMLLoader loader = new FXMLLoader();
@@ -239,9 +211,7 @@ public class PrincipalaProduse {
             Parent parent = loader.load();
             Scene scene = new Scene(parent);
             Principala controller = loader.getController();
-            if(produse.isSelected())
-                controller.set(false, 0,client_username,client_adress, cart);
-            else controller.set(az.isSelected(), az_state,client_username,client_adress, cart);
+            controller.set(false, 0,client_username,client_adress, cart);
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
