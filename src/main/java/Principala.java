@@ -5,7 +5,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -29,11 +28,11 @@ public class Principala{
         this.cart=cart;
         if(az_selected&&az_state==1) {
             az.setSelected(true);
-            //sort();
+            sort();
         }
         else if(az_selected&&az_state==2) {
             this.az_state = 1;
-            //sort();
+            sort();
         }
         try {
             all_products.clear();
@@ -150,7 +149,7 @@ public class Principala{
                     for (AllProducts p : init)
                         if(s[0] && (p.getObject().equals("ANIMAL")?((Animal) p).getNumeRasa():((Product)p).getNume()).toUpperCase().compareTo((aux.getObject().equals("ANIMAL")?((Animal) aux).getNumeRasa():((Product)aux).getNume()).toUpperCase()) < 0
                                 || s[1] && (p.getObject().equals("ANIMAL")?((Animal) p).getNumeRasa():((Product)p).getNume()).toUpperCase().compareTo((aux.getObject().equals("ANIMAL")?((Animal) aux).getNumeRasa():((Product)aux).getNume()).toUpperCase()) > 0)
-                            aux=p;
+                                aux=p;
                     sort.add(aux);
                     init.remove(aux);
                 }
@@ -207,7 +206,21 @@ public class Principala{
             e.printStackTrace();
         }
     }
-
+    public void magazine(javafx.event.ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader=new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Magazine.fxml"));
+            Parent parent=loader.load();
+            Scene scene = new Scene(parent);
+            Magazine controller=loader.getController();
+            controller.set(client_username,client_adress,cart);
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
 
