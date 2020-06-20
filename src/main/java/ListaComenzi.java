@@ -67,6 +67,29 @@ public class ListaComenzi {
             e.printStackTrace();
         }
     }
+    public void editOrder() {
+        String selectedItem = lv.getSelectionModel().getSelectedItem();
+        if (selectedItem == null) message("Error!","Nu ati selectat nici o comanda!");
+        else {
+            String[] details = selectedItem.split(" ");
+            int index = 0;
+            for (Order o : shop_orders)
+                if (details[1].equals(Long.toString(o.getTime()))&&details[5].equals(o.getNume()))
+                    index = shop_orders.indexOf(o);
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/EditeazaComanda.fxml"));
+                Parent fxml = loader.load();
+                Stage stage = new Stage();
+                EditeazaComanda controller = loader.getController();
+                controller.set(stage,shop_username,shop_adress,all_products,shop_orders,lv,index);
+                stage.setTitle("Editare produs");
+                stage.setScene(new Scene(fxml));
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
     public void message(String title,String message) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Message.fxml"));
