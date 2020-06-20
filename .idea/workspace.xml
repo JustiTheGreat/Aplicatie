@@ -21,20 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AnimaleCentru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AnimaleCentru.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Magazine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Principala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Principala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrincipalaAnimale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrincipalaAnimale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrincipalaProduse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrincipalaProduse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProdusePetshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProdusePetshop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AnimaleCentru.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AnimaleCentru.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Cos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Cos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Magazine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Magazine.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Principala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Principala.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/PrincipalaAnimale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrincipalaAnimale.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/PrincipalaProduse.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrincipalaProduse.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ProdusePetshop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ProdusePetshop.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="FIS1-40_Creaza_o_comanda" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -80,10 +66,10 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\java" />
-      <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\java" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\resources" />
+      <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\java" />
+      <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\resources" />
       <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main" />
     </key>
   </component>
@@ -148,13 +134,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FIS1-11_Autentificare" />
