@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inregistrare">
+   <children>
+      <Button layoutX="513.0" layoutY="632.0" mnemonicParsing="false" onMouseClicked="#click" prefHeight="99.0" prefWidth="341.0" text="Inregistrare" textFill="RED">
+         <font>
+            <Font size="35.0" />
+         </font></Button>
+      <TextField fx:id="telefon" layoutX="667.0" layoutY="457.0" promptText="Telefon" />
+      <Label layoutX="534.0" layoutY="521.0" text="Username" />
+      <Label layoutX="546.0" layoutY="105.0" text="Nume" />
+      <Label layoutX="537.0" layoutY="167.0" text="Prenume" />
+      <Label layoutX="547.0" layoutY="230.0" text="Judet" />
+      <Label layoutX="542.0" layoutY="390.0" prefHeight="31.0" prefWidth="46.0" text="Numar" />
+      <Label layoutX="535.0" layoutY="286.0" text="Localitate" />
+      <Label layoutX="544.0" layoutY="338.0" text="Strada" />
+      <TextField fx:id="numar" layoutX="667.0" layoutY="390.0" promptText="Numar" />
+      <TextField fx:id="localitate" layoutX="667.0" layoutY="281.0" promptText="Localitate" />
+      <TextField fx:id="judet" layoutX="667.0" layoutY="225.0" promptText="Judet" />
+      <TextField fx:id="prenume" layoutX="667.0" layoutY="162.0" promptText="Prenume" />
+      <TextField fx:id="nume" layoutX="667.0" layoutY="100.0" promptText="Nume" />
+      <TextField fx:id="username" layoutX="667.0" layoutY="516.0" promptText="Username" />
+      <Label layoutX="544.0" layoutY="462.0" text="Telefon" />
+      <Label layoutX="544.0" layoutY="583.0" text="Parola" />
+      <TextField fx:id="parola" layoutX="667.0" layoutY="578.0" promptText="Parola" />
+      <TextField fx:id="strada" layoutX="667.0" layoutY="333.0" promptText="Strada" />
+   </children>
+</AnchorPane>
