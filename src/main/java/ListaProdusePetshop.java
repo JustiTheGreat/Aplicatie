@@ -91,6 +91,31 @@ public class ListaProdusePetshop {
         }
     }
 
+    public void deleteProduct() {
+        String selectedItem = lv.getSelectionModel().getSelectedItem();
+        if (selectedItem == null) message("Error!","Nu ati selectat nici un produs!");
+        else {
+            String[] details = selectedItem.split(" ");
+            int index=0;
+            for (AllProducts p : all_products)
+                if (p.getObject().equals("PRODUCT")&&((Product)p).getNume().equals(details[0])) index=all_products.indexOf(p);
+            all_products.remove(index);
+            write();
+            filt_and_sort();
+        }
+    }
+
+    public void write() {
+        try {
+            FileWriter myWriter = new FileWriter("src/main/produse.txt", false);
+            for (AllProducts p : all_products)
+                myWriter.write(p.getObject() + " " + p.toString() + "\n");
+            myWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void message(String title,String message) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Message.fxml"));
