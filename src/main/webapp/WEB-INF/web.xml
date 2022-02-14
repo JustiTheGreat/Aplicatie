@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>Actions.AnimalActions.GetAnimals</servlet-name>
+        <servlet-class>Actions.AnimalActions.GetAnimals</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.AnimalActions.GetAnimals</servlet-name>
+        <url-pattern>/get-animals</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.AnimalActions.AddAnimal</servlet-name>
+        <servlet-class>Actions.AnimalActions.AddAnimal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.AnimalActions.AddAnimal</servlet-name>
+        <url-pattern>/add-animal</url-pattern>
+    </servlet-mapping>
+    <servlet>
+
+        <servlet-name>Actions.AnimalActions.EditAnimal</servlet-name>
+        <servlet-class>Actions.AnimalActions.EditAnimal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.AnimalActions.EditAnimal</servlet-name>
+        <url-pattern>/edit-animal</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.AnimalActions.DeleteAnimal</servlet-name>
+        <servlet-class>Actions.AnimalActions.DeleteAnimal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.AnimalActions.DeleteAnimal</servlet-name>
+        <url-pattern>/delete-animal</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.AnimalActions.GetAnimal</servlet-name>
+        <servlet-class>Actions.AnimalActions.GetAnimal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.AnimalActions.GetAnimal</servlet-name>
+        <url-pattern>/get-animal</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.ProductActions.GetProducts</servlet-name>
+        <servlet-class>Actions.ProductActions.GetProducts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.ProductActions.GetProducts</servlet-name>
+        <url-pattern>/get-products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.ProductActions.AddProduct</servlet-name>
+        <servlet-class>ProductActions.AddProductl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.ProductActions.AddProduct</servlet-name>
+        <url-pattern>/add-product</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.ProductActions.EditProduct</servlet-name>
+        <servlet-class>Actions.ProductActions.EditProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.ProductActions.EditProduct</servlet-name>
+        <url-pattern>/edit-product</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.ProductActions.DeleteProduct</servlet-name>
+        <servlet-class>Actions.ProductActions.DeleteProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.ProductActions.DeleteProduct</servlet-name>
+        <url-pattern>/delete-product</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.ProductActions.GetProduct</servlet-name>
+        <servlet-class>Actions.ProductActions.GetProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.ProductActions.GetProduct</servlet-name>
+        <url-pattern>/get-product</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.AddCenter</servlet-name>
+        <servlet-class>Actions.UserActions.AddCenter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.AddCenter</servlet-name>
+        <url-pattern>/add-center</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.AddClient</servlet-name>
+        <servlet-class>Actions.UserActions.AddClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.AddClient</servlet-name>
+        <url-pattern>/add-client</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.AddPetshop</servlet-name>
+        <servlet-class>Actions.UserActions.AddPetshop</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.AddPetshop</servlet-name>
+        <url-pattern>/add-petshop</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.GetCenter</servlet-name>
+        <servlet-class>Actions.UserActions.GetCenter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.GetCenter</servlet-name>
+        <url-pattern>/get-center</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.GetClient</servlet-name>
+        <servlet-class>Actions.UserActions.GetClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.GetClient</servlet-name>
+        <url-pattern>/get-client</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.GetPetshop</servlet-name>
+        <servlet-class>Actions.UserActions.GetPetshop</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.GetPetshop</servlet-name>
+        <url-pattern>/get-petshop</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.GetCenters</servlet-name>
+        <servlet-class>Actions.UserActions.GetCenters</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.GetCenters</servlet-name>
+        <url-pattern>/get-centers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.UserActions.GetPetshops</servlet-name>
+        <servlet-class>Actions.UserActions.GetPetshops</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.UserActions.GetPetshops</servlet-name>
+        <url-pattern>/get-petshops</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.MagazineActions.GetAnimalsMagazin</servlet-name>
+        <servlet-class>Actions.MagazineActions.GetAnimalsMagazin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.MagazineActions.GetAnimalsMagazin</servlet-name>
+        <url-pattern>/get-animals-magazin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.MagazineActions.GetProductsMagazin</servlet-name>
+        <servlet-class>Actions.MagazineActions.GetProductsMagazin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.MagazineActions.GetProductsMagazin</servlet-name>
+        <url-pattern>/get-products-magazin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.AddOrder</servlet-name>
+        <servlet-class>Actions.OrderActions.AddOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.AddOrder</servlet-name>
+        <url-pattern>/add-order</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.AddOrderProductBond</servlet-name>
+        <servlet-class>Actions.OrderActions.AddOrderProductBond</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.AddOrderProductBond</servlet-name>
+        <url-pattern>/add-order-product-bond</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.GetOrdersClient</servlet-name>
+        <servlet-class>Actions.OrderActions.GetOrdersClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.GetOrdersClient</servlet-name>
+        <url-pattern>/get-orders-client</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.GetOrdersMagazin</servlet-name>
+        <servlet-class>Actions.OrderActions.GetOrdersMagazin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.GetOrdersMagazin</servlet-name>
+        <url-pattern>/get-orders-magazin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.GetOrderProducts</servlet-name>
+        <servlet-class>Actions.OrderActions.GetOrderProducts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.GetOrderProducts</servlet-name>
+        <url-pattern>/get-order-products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.DeleteOrder</servlet-name>
+        <servlet-class>Actions.OrderActions.DeleteOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.DeleteOrder</servlet-name>
+        <url-pattern>/delete-order</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.EditOrder</servlet-name>
+        <servlet-class>Actions.OrderActions.EditOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.EditOrder</servlet-name>
+        <url-pattern>/edit-order</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Actions.OrderActions.GetOrder</servlet-name>
+        <servlet-class>Actions.OrderActions.GetOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Actions.OrderActions.GetOrder</servlet-name>
+        <url-pattern>/get-order</url-pattern>
+    </servlet-mapping>
+</web-app>

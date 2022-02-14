@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AplicatieWeb:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="FIS1-32_Selectare_comanda/cerere_de_adoptie">
-      <change beforePath="$PROJECT_DIR$/src/main/java/EditeazaComanda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditeazaComanda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EditeazaComanda.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EditeazaComanda.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="59c077e2-4117-4469-bd01-6897e81d7ca2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,304 +18,324 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaFXApplication" />
+        <option value="Jsp File" />
         <option value="Class" />
-        <option value="FxmlFile" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="FIS1-28_Vede_comenzi/cereri_de_adoptie_primite" />
-      </map>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1b5mrEljaYLRvR7sZ2yPlbJbnsv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="1jYlGFkJDtzNi8AfQLiaBNFSGQB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3954023" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\java" />
-      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main\resources" />
-      <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\java" />
-      <recent name="C:\Users\Silviu\Desktop\Aplicatie\src\main\resources" />
-      <recent name="C:\Users\Adriana\Desktop\Aplicatie\src\main" />
+      <recent name="C:\Users\Adriana\Desktop\AplicatieWeb\src\main\java\ProductActions" />
+      <recent name="C:\Users\Adriana\Desktop\AplicatieWeb\src\main\resources" />
+      <recent name="C:\Users\Adriana\Desktop\AplicatieWeb\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Aplicatie" />
+      <module name="AplicatieWeb" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+    <configuration name="Tomcat 9.0.391" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.391" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="AplicatieWeb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_391_AplicatieWeb" />
+        <option name="HTTP_PORT" value="8085" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58540" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="AplicatieWeb:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.391" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/AplicatieWeb" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_AplicatieWeb" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58540" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.391" />
+    </list>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ba2faa62-6a33-46b7-bf72-60d063f9d173" name="Default Changelist" comment="" />
-      <created>1587930525949</created>
+      <changelist id="59c077e2-4117-4469-bd01-6897e81d7ca2" name="Default Changelist" comment="" />
+      <created>1603988810844</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1587930525949</updated>
+      <updated>1603988810844</updated>
+      <workItem from="1603988812037" duration="21788000" />
+      <workItem from="1604020883396" duration="3178000" />
+      <workItem from="1604024069866" duration="18970000" />
+      <workItem from="1604059001141" duration="5147000" />
+      <workItem from="1604087729482" duration="1860000" />
+      <workItem from="1604148290783" duration="8619000" />
+      <workItem from="1604163943404" duration="26002000" />
+      <workItem from="1604228228971" duration="7272000" />
+      <workItem from="1604235533241" duration="39154000" />
+      <workItem from="1604281973247" duration="1821000" />
+      <workItem from="1604297013223" duration="18282000" />
+      <workItem from="1604318715899" duration="1867000" />
+      <workItem from="1606323213313" duration="287000" />
     </task>
-    <task id="LOCAL-00001" summary="FIS1-11_Autentificare">
-      <created>1592668184304</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1592668184304</updated>
-    </task>
-    <task id="LOCAL-00002" summary="FIS1-38_Lista_cu_produse/animale">
-      <created>1592672201992</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1592672201992</updated>
-    </task>
-    <task id="LOCAL-00003" summary="FIS1-39_Lista_cu_petshopuri/centre_de_adoptie">
-      <created>1592673697749</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1592673697749</updated>
-    </task>
-    <task id="LOCAL-00004" summary="FIS1-40_Creaza_o_comanda">
-      <created>1592674569647</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1592674569647</updated>
-    </task>
-    <task id="LOCAL-00005" summary="FIS1-80_Afisare_produse">
-      <created>1592686511741</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1592686511741</updated>
-    </task>
-    <task id="LOCAL-00006" summary="FIS1-81_Sortare_si_filtrare_produse">
-      <created>1592686696944</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1592686696944</updated>
-    </task>
-    <task id="LOCAL-00007" summary="FIS1-35_Buton_adaugare_produs">
-      <created>1592687760817</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1592687760817</updated>
-    </task>
-    <task id="LOCAL-00008" summary="FIS1-15_Selectare_produs_de_editat">
-      <created>1592688453838</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1592688453838</updated>
-    </task>
-    <task id="LOCAL-00009" summary="FIS1-27_Stergerea_produsului">
-      <created>1592688815776</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1592688815776</updated>
-    </task>
-    <task id="LOCAL-00010" summary="FIS1-83_Afisare_animale">
-      <created>1592689302951</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1592689302951</updated>
-    </task>
-    <task id="LOCAL-00011" summary="FIS1-83_Afisare_animale">
-      <created>1592689329374</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1592689329374</updated>
-    </task>
-    <task id="LOCAL-00012" summary="FIS1-84_Sortare_si_filtrare_animale">
-      <created>1592689533469</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1592689533469</updated>
-    </task>
-    <task id="LOCAL-00013" summary="FIS1-58_Buton_adaugare_animal">
-      <created>1592690497947</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1592690497947</updated>
-    </task>
-    <task id="LOCAL-00014" summary="FIS1-59_Se_intorduc_si_se_salveaza_datele_noului_animal">
-      <created>1592690611620</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1592690611620</updated>
-    </task>
-    <task id="LOCAL-00015" summary="FIS1-63_Buton_editare_date_animal">
-      <created>1592691179419</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1592691179419</updated>
-    </task>
-    <task id="LOCAL-00016" summary="FIS1-63_Schimbarea_datelor">
-      <created>1592691282773</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1592691282773</updated>
-    </task>
-    <task id="LOCAL-00017" summary="FIS1-29_Butonul_de_vizualizare_a_comenziilor/cererilor_primite">
-      <created>1592693339159</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1592693339159</updated>
-    </task>
-    <task id="LOCAL-00018" summary="FIS1-32_Selectare_comanda/cerere_de_adoptie">
-      <created>1592694099467</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1592694099467</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="FIS1-11_Autentificare" />
-    <MESSAGE value="FIS1-38_Lista_cu_produse/animale" />
-    <MESSAGE value="FIS1-39_Lista_cu_petshopuri/centre_de_adoptie" />
-    <MESSAGE value="FIS1-40_Creaza_o_comanda" />
-    <MESSAGE value="FIS1-80_Afisare_produse" />
-    <MESSAGE value="FIS1-81_Sortare_si_filtrare_produse" />
-    <MESSAGE value="FIS1-35_Buton_adaugare_produs" />
-    <MESSAGE value="FIS1-15_Selectare_produs_de_editat" />
-    <MESSAGE value="FIS1-27_Stergerea_produsului" />
-    <MESSAGE value="FIS1-83_Afisare_animale" />
-    <MESSAGE value="FIS1-84_Sortare_si_filtrare_animale" />
-    <MESSAGE value="FIS1-58_Buton_adaugare_animal" />
-    <MESSAGE value="FIS1-59_Se_intorduc_si_se_salveaza_datele_noului_animal" />
-    <MESSAGE value="FIS1-63_Buton_editare_date_animal" />
-    <MESSAGE value="FIS1-63_Schimbarea_datelor" />
-    <MESSAGE value="FIS1-29_Butonul_de_vizualizare_a_comenziilor/cererilor_primite" />
-    <MESSAGE value="FIS1-32_Selectare_comanda/cerere_de_adoptie" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIS1-32_Selectare_comanda/cerere_de_adoptie" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Project_Structure" timestamp="1587930556466">
+    <state x="738" y="416" key="#Tomcat_Server" timestamp="1603988870540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="416" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1603988870540" />
+    <state x="414" y="174" width="1092" height="805" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604164622212">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" width="1092" height="805" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604164622212" />
+    <state x="648" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604005472654">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604005472654" />
+    <state x="739" y="261" key="FileChooserDialogImpl" timestamp="1604037967794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604037967794" />
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1606323505910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587930556466" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1592079511172">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589811413960" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592079511172" />
-    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589812296344">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606323505910" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067384" />
+    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1606323505910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1589812296344" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592671845221">
+    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606323505910" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067384" />
+    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1606323505910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592671845221" />
-    <state x="624" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592504031988" />
-    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592674567646">
+    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606323505910" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067384" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1606323505910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592674567646" />
-    <state x="147" y="65" key="DiffContextDialog" timestamp="1592667398430">
+    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606323505910" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067384" />
+    <state width="918" height="195" key="GridCell.Tab.1.bottom" timestamp="1606323505904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1592667398430" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1588516662082">
+    <state width="918" height="195" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606323505904" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067376" />
+    <state width="918" height="195" key="GridCell.Tab.1.center" timestamp="1606323505904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588516662082" />
-    <state width="1877" height="232" key="GridCell.Tab.0.bottom" timestamp="1592692790284">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592692790284" />
-    <state width="1877" height="232" key="GridCell.Tab.0.center" timestamp="1592692790284">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592692790284" />
-    <state width="1877" height="232" key="GridCell.Tab.0.left" timestamp="1592692790283">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592692790283" />
-    <state width="1877" height="232" key="GridCell.Tab.0.right" timestamp="1592692790284">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1478" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592675206638" />
-    <state width="1877" height="232" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592692790284" />
-    <state x="757" y="222" key="RollbackChangesDialog" timestamp="1592692824014">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="757" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592692824014" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592690664479">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592690664479" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592670799054">
+    <state width="918" height="195" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606323505904" />
+    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067376" />
+    <state width="918" height="195" key="GridCell.Tab.1.left" timestamp="1606323505903">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592670799054" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1592169826805">
+    <state width="918" height="195" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606323505903" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067376" />
+    <state width="918" height="195" key="GridCell.Tab.1.right" timestamp="1606323505904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="918" height="195" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606323505904" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067376" />
+    <state width="918" height="195" key="GridCell.Tab.2.bottom" timestamp="1606323505904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="918" height="195" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606323505904" />
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067376" />
+    <state width="918" height="195" key="GridCell.Tab.2.center" timestamp="1606323505904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="918" height="195" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606323505904" />
+    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067375" />
+    <state width="918" height="195" key="GridCell.Tab.2.left" timestamp="1606323505904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="918" height="195" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606323505904" />
+    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067375" />
+    <state width="918" height="195" key="GridCell.Tab.2.right" timestamp="1606323505904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="918" height="195" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606323505904" />
+    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604323067375" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1604025499864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592169826805" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604025499864" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1603989562812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603989562812" />
+    <state x="505" y="255" width="910" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604024586659">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="505" y="255" width="910" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1604024586659" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Aplicatie$Main.ic" NAME="Main Coverage Results" MODIFIED="1592576197978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilizator/Client/PrincipalaClientCos.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

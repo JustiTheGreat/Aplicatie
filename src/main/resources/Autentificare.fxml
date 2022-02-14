@@ -1,21 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Autentificare">
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TotPanaLaAutentificare.Autentificare">
    <children>
-      <Label layoutX="558.0" layoutY="321.0" text="Username" />
-      <Label layoutX="574.0" layoutY="388.0" text="Parola" />
-      <TextField fx:id="username" layoutX="666.0" layoutY="306.0" promptText="Username" />
-      <Button layoutX="514.0" layoutY="473.0" mnemonicParsing="false" onMouseClicked="#click" prefHeight="121.0" prefWidth="339.0" text="Autentificare" textFill="RED">
-         <font>
-            <Font size="35.0" />
-         </font></Button>
-      <PasswordField fx:id="parola" layoutX="666.0" layoutY="383.0" promptText="Parola" />
+      <GridPane layoutX="442.0" layoutY="78.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <PasswordField fx:id="parola" maxWidth="200.0" promptText="Parola" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="400.0" />
+               </GridPane.margin>
+            </PasswordField>
+            <Button mnemonicParsing="false" onAction="#autentificare" prefHeight="100.0" prefWidth="300.0" text="Autentificare" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" top="200.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#inapoi" prefHeight="100.0" prefWidth="300.0" text="Inapoi" textFill="RED" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" top="200.0" />
+               </GridPane.margin>
+            </Button>
+            <Label text="Username:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="350.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Parola:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="400.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="username" maxWidth="200.0" promptText="Username" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="350.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
    </children>
 </AnchorPane>
