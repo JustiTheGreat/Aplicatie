@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TotPanaLaAutentificare.InregistrareClient">
+   <children>
+      <GridPane layoutX="175.0" layoutY="226.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#start" prefHeight="100.0" prefWidth="150.0" text="Start" textFill="RED" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" top="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#inregistrare" prefHeight="100.0" prefWidth="250.0" text="Inregistrare" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="150.0" left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#inapoi" prefHeight="100.0" prefWidth="250.0" text="Inapoi" textFill="RED" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="150.0" right="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Label text="Nume:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="150.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Judet:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="250.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Localitate:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="300.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Strada:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="350.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Telefon:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="450.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Username:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="500.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Parola:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="550.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="nume" maxWidth="200.0" promptText="Nume" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="150.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="judet" maxWidth="200.0" promptText="Judet" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="250.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="localitate" maxWidth="200.0" promptText="Localitate" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="300.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Numar:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="400.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="strada" maxWidth="200.0" promptText="Strada" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="350.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numar" maxWidth="200.0" promptText="Numar" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="400.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="telefon" maxWidth="200.0" promptText="Telefon" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="450.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="username" maxWidth="200.0" promptText="Username" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="500.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="parola" maxWidth="200.0" promptText="Parola" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="550.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Prenume:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="200.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="prenume" maxWidth="200.0" promptText="Prenume" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" top="200.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

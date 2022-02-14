@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Start">
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TotPanaLaAutentificare.Start">
    <children>
       <Button fx:id="StartInregistrareButon" layoutX="558.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#deschideInregistrare" prefHeight="81.0" prefWidth="250.0" text="Inregistrare" textAlignment="CENTER" textFill="#2500ff">
          <font>
