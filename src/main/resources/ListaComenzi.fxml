@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListaComenzi">
+<AnchorPane prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utilizator.Magazin.ListaComenzi">
     <children>
         <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columnConstraints>
@@ -19,7 +19,7 @@
                 <RowConstraints maxHeight="770.0" minHeight="10.0" prefHeight="770.0" valignment="TOP" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" text="Sterge comanda" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="50.0" prefWidth="250.0" text="Sterge comanda" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                     <GridPane.margin>
                         <Insets bottom="140.0" />
                     </GridPane.margin>
@@ -60,6 +60,11 @@
                         <Blend />
                     </effect>
                 </Text>
+            <Button mnemonicParsing="false" onAction="#deconectare" text="Deconectare" textFill="RED" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
             </children>
         </GridPane>
     </children>
